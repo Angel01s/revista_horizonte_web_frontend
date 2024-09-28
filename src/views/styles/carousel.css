@@ -1,0 +1,80 @@
+.carousel {
+    position: relative;
+    max-width: 1280px; /* Ajusta según tus necesidades */
+    overflow: hidden;
+    margin: 30px auto;
+    height: 400px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-card {
+    display: flex; /* Hacemos flex para colocar la imagen y el contenido lado a lado */
+    min-width: 100%; /* Cada tarjeta ocupa el 100% del contenedor */
+    margin:  0 auto;
+    height: 100%;
+}
+.espaciado{
+    width: 10%;
+}
+.carousel-image {
+    width: 40%; /* La imagen ocupa la mitad izquierda */
+    height: 100%; /* Ajusta la altura según sea necesario */
+    object-fit: cover; /* Mantiene la proporción y aplica zoom si es necesario */
+}
+
+
+.carousel-content {
+    width: 40%; /* El contenido ocupa la mitad derecha */
+    background: white; /* Fondo blanco */
+    padding: 40px; /* Espaciado interno */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    height: 100%;
+    flex-grow: 1;
+}
+
+.carousel-title {
+    font-size: 24px; /* Ajusta el tamaño según necesites */
+    margin: 0;
+}
+
+.carousel-subtitle {
+    font-size: 16px; /* Ajusta el tamaño según necesites */
+    margin: 5px 0; /* Espaciado */
+}
+
+.carousel-author,
+.carousel-date {
+    font-size: 14px; /* Ajusta el tamaño según necesites */
+    color: gray; /* Color del texto */
+    margin: 0; /* Sin margen */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    padding-bottom: 6.5px;
+}
+.carousel-button.left {
+    left: 10px;
+}
+
+.carousel-button.right {
+    right: 10px;
+}

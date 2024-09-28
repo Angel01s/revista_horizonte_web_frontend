@@ -3,9 +3,14 @@ import { createRoot } from 'react-dom/client'
 
 import './index.css'
 import AppRouter from './router.tsx'
+import '@mantine/core/styles.css';
+
+import { MantineProvider } from '@mantine/core';
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <AppRouter/>
-  </StrictMode>,
+  <MantineProvider>
+    <StrictMode>
+      <AppRouter/>
+    </StrictMode>
+  </MantineProvider>
 )

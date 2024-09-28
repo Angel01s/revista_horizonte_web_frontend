@@ -1,3 +1,61 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.explora-container {
+    max-width: 1200px; /* Ajusta el valor según lo que necesites */
+    margin: 0 auto;
+    margin-top: 1rem; /* my-4 */
+    font-family: 'Cocogoose', sans-serif; 
+}
+
+.explora-title {
+    font-size: 40px; /* Ajusta el tamaño según necesites */
+    
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem; /* gap-6 */
+}
+
+.area-button {
+    position: relative;
+    background-color: #000000;  /* Color de fondo */
+    color: white; /* Color del texto */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    border: 1px solid #C67F07; /* Cambia el color del borde aquí */
+    overflow: hidden; /* Cambiado a hidden para que no se desborde */
+    width: 100%; /* Asegúrate de que ocupe todo el espacio disponible */
+    height: 200px; /* Ajusta según tus necesidades */
+    transition: box-shadow 0.3s;
+}
+
+.area-button:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* hover:shadow-xl */
+}
+
+.area-image {
+    position: absolute; /* Para cubrir todo el botón */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Asegúrate de que la imagen ocupe toda la altura del botón */
+    object-fit: cover; /* Asegura que la imagen cubra todo el botón */
+    opacity: 0.7; /* opacity-70 */
+}
+
+.area-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(45, 55, 72, 0.5); /* bg-gray-900 bg-opacity-50 */
+}
+
+.area-name {
+    font-size: 20px; /* text-xl */
+    font-weight: bold; /* font-bold */
+}

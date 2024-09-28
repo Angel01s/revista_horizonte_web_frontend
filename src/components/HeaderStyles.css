@@ -1,0 +1,84 @@
+.header {
+  max-width: 1280px; /* Ajusta según sea necesario */
+  margin: 1rem auto;
+  font-family: 'Cocogoose', sans-serif; 
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.subscribe-button {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  font-size: 20px;
+}
+
+.subscribe-button:hover {
+  background-color: #C67F07;
+  border-color: #C67F07;
+  color: white;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.title {
+  font-size: 100px; /* Ajusta según sea necesario */
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 1.6rem; /* Ajusta según sea necesario */
+  margin-top: -95px;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-field {
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 0.5rem;
+}
+
+.divider {
+  border: 2px solid #C67F07;
+}
+.narvar{
+  margin-top: -40px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.nav-link {
+  color: black;
+  text-transform: uppercase;
+  font-size: 17px; /* Ajusta según sea necesario */
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: #C67F07;
+  font-weight: bold;
+}
